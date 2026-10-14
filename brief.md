@@ -20,10 +20,19 @@ The responder's mobile application needs to notify the user when it is offline a
 Resource: Android Developers - Offline-first architecture - https://developer.android.com/topic/architecture/data-layer/offline-first
 
 ## Networking
+Network slicing in the 5G network means that operators can create several virtual networks using the same physical network. Each slice will have its unique parameters, which may include capacity, latency, and dependability. Having a slice dedicated to emergency workers would ensure that these communications will be prioritized, even in the case of network congestion. Moreover, the slice can separate emergency communications from those of consumers. Nevertheless, network slicing is not enough to guarantee connectivity during outages and cyber-attacks.
+
+Resource: 3GPP - Network Slicing - https://www.3gpp.org/technologies/network-slicing
 
 ## Cybersecurity
+The incident response life cycle comprises of preparation, detection and analysis, containment, eradication, recovery, and lessons learned. In the case of an attack on the emergency 5G service, the teams go through all these phases by adhering to set procedures, detecting any unusual behavior, investigating threats, minimizing harm, eliminating malware, and ensuring that operations become safe once again. In the end, there is an evaluation of the entire incident, as well as improvement in the security controls.
+
+Resource: NIST - Computer Security Incident Handling Guide - https://csrc.nist.gov/pubs/sp/800/61/r2/final
 
 ## Data
+The star schema contains one central fact table that is connected directly to other dimension tables. The snowflake schema contains normalized dimension tables where the data redundancy is lower. However, for creating more joins, a snowflake schema can be used. In case of creation of the report on 5G service utilization by region and day, a star schema can be considered suitable due to simple understanding and querying of date and region dimensions.
+
+Resource: Microsoft Learn – Star schema guidance – https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
 
