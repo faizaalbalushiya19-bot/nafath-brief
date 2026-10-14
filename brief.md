@@ -35,5 +35,9 @@ The star schema contains one central fact table that is connected directly to ot
 Resource: Microsoft Learn – Star schema guidance – https://learn.microsoft.com/en-us/power-bi/guidance/star-schema
 
 ## Misconception in My Track
+It is a misconception that a snowflake schema is always a superior choice over a star schema due to reduced redundancy of data. The correct answer really lies in what is needed for the purpose of reporting, complexity of the query, and maintenance. A star schema is generally better suited for reporting purposes since the fact table is directly related to dimension tables. A snowflake schema will have the dimensions normalized into another table, thus reducing the redundancy of data, but with increased number of joins. This makes the star schema suitable for emergency 5G service usage reports based on regions and days.Resource: 1.Microsoft Learn  2.Star schema guidance 
+
+https://learn.microsoft.com/en-us/power
 
 ## Open Question
+How can the operator detect and remove duplicate usage records to ensure accurate daily reports by region?
